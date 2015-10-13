@@ -49,6 +49,12 @@ Anti-animation:
 data-tip-no-animation
 ```
 
+Rounded border:
+
+```html
+data-tip-rounded
+```
+
 ## Why not hint.css?
 
 [hint.css](https://github.com/chinchang/hint.css) is another great tooltip library, but it looks exactly like this:

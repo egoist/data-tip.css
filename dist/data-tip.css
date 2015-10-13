@@ -236,3 +236,8 @@
   -ms-transition: none;
   transition: none;
 }
+.data-tip.data-tip-rounded:after,
+[data-tip].data-tip-rounded:after {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}

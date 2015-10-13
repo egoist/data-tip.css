@@ -44,6 +44,7 @@ colorGen(type)
       opacity 1
       visibility visible
       z-index 9999
+  // bottom
   &.data-tip-bottom
     &:before, &:after
       top 100%
@@ -54,6 +55,7 @@ colorGen(type)
     &:hover
       &:before, &:after
         transform translateX(-50%) translateY(8px)
+  // top
   &.data-tip-top
     &:before, &:after
       bottom 100%
@@ -64,6 +66,7 @@ colorGen(type)
     &:hover
       &:before, &:after
         transform translateX(-50%) translateY(-8px)
+  // left
   &.data-tip-left
     &:before, &:after
       top 50%
@@ -75,6 +78,7 @@ colorGen(type)
     &:hover
       &:before, &:after
         transform translateY(-50%) translateX(-8px)
+  // right
   &.data-tip-right
     &:before, &:after
       top 50%
@@ -86,6 +90,7 @@ colorGen(type)
     &:hover
       &:before, &:after
         transform translateY(-50%) translateX(8px)
+  // custom color
   &.data-tip-success
     colorGen $success
   &.data-tip-warning
@@ -94,6 +99,11 @@ colorGen(type)
     colorGen $danger
   &.data-tip-info
     colorGen $info
+  // no animation
   &.data-tip-no-animation
     &:before, &:after
       transition none
+  // rounded border
+  &.data-tip-rounded
+    &:after
+      border-radius 2px
