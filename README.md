@@ -1,11 +1,22 @@
 # data-tip.css
 
+Wow, such tooltip, with pure css!
+
+## Install
+
+```bash
+bower install data-tip
+npm install data-tip
+```
+
 ## Usage
 
 Simply write like this in your HTML:
 
 ```html
-<button class="data-tip data-tip-bottom" data-tip="Tips To Show">My Custom Button</button
+<button class="data-tip data-tip-bottom" data-tip="Tips To Show">
+  My Custom Button
+</button>
 ```
 
 Position your tip:
