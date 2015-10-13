@@ -70,8 +70,8 @@ Update `data-tip.styl` to change styles
 |command|description|
 |---|---|
 |npm install|install dependencies for dev|
-|gulp build|build html and css files|
-|gulp|build and watch file changes|
+|npm run build|build html and css files|
+|npm run dev|build and watch file changes|
 
 ## License
 
