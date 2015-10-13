@@ -20,7 +20,7 @@ npm install data-tip
 Simply write like this in your HTML:
 
 ```html
-<button class="data-tip data-tip-bottom" data-tip="Tips To Show">
+<button class="data-tip-bottom" data-tip="Tips To Show">
   My Custom Button
 </button>
 ```
