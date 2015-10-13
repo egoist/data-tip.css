@@ -3,6 +3,8 @@ import stylus from 'gulp-stylus'
 import jade from 'gulp-jade'
 import serve from 'gulp-serve'
 import nib from 'nib'
+import min from 'gulp-cssmin'
+import rename from 'gulp-rename'
 
 const time = Date.now()
 
@@ -16,6 +18,11 @@ gulp.task('css', () => {
     .pipe(stylus({
       use: [nib()],
       import: ['nib']
+    }))
+    .pipe(gulp.dest('./dist'))
+    .pipe(min())
+    .pipe(rename({
+      suffix: '.min'
     }))
     .pipe(gulp.dest('./dist'))
 })
