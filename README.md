@@ -9,6 +9,10 @@ Wow, such tooltip, with pure css!
 ```bash
 bower install data-tip
 npm install data-tip
+
+# additionally for Stylus lovers
+# you can import data-tip.styl directly
+@import '/path/to/data-tip'
 ```
 
 ## Usage
