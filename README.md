@@ -1,3 +1,5 @@
+<img src="http://r5.loli.io/aiYVJb.png" align="right" width="100">
+
 # data-tip.css
 
 Wow, such tooltip, with pure css!
