@@ -1,0 +1,99 @@
+$danger = #b34e4d
+$warning = #c09854
+$info = #3986ac
+$success = #458746
+
+colorGen(type)
+  &:after
+    background-color type
+  &.data-tip-top
+    &:before
+      border-top-color type
+  &.data-tip-left
+    &:before
+      border-left-color type
+  &.data-tip-right
+    &:before
+      border-right-color type
+  &.data-tip-bottom
+    &:before
+      border-bottom-color type
+
+.data-tip
+  position relative
+  &:before, &:after
+    position absolute
+    transform translateX(-50%)
+    opacity 0
+    transition opacity .3s ease, transform .3s ease, visibility .3s ease
+    visibility hidden
+    font-size 12px
+    line-height @font-size
+  &:before
+    content ''
+    border 6px solid transparent
+  &:after
+    content attr(data-tip)
+    padding 7px 10px
+    background-color #333
+    display block
+    color white
+    white-space nowrap
+  &:hover
+    &:before, &:after
+      opacity 1
+      visibility visible
+      z-index 9999
+  &.data-tip-bottom
+    &:before, &:after
+      top 100%
+      left 50%
+    &:before
+      margin-top -12px
+      border-bottom-color #333
+    &:hover
+      &:before, &:after
+        transform translateX(-50%) translateY(8px)
+  &.data-tip-top
+    &:before, &:after
+      bottom 100%
+      left 50%
+    &:before
+      margin-bottom -12px
+      border-top-color #333
+    &:hover
+      &:before, &:after
+        transform translateX(-50%) translateY(-8px)
+  &.data-tip-left
+    &:before, &:after
+      top 50%
+      right 100%
+      transform translateY(-50%)
+    &:before
+      margin-right -12px
+      border-left-color #333
+    &:hover
+      &:before, &:after
+        transform translateY(-50%) translateX(-8px)
+  &.data-tip-right
+    &:before, &:after
+      top 50%
+      left 100%
+      transform translateY(-50%)
+    &:before
+      margin-left -12px
+      border-right-color #333
+    &:hover
+      &:before, &:after
+        transform translateY(-50%) translateX(8px)
+  &.data-tip-success
+    colorGen $success
+  &.data-tip-warning
+    colorGen $warning
+  &.data-tip-danger
+    colorGen $danger
+  &.data-tip-info
+    colorGen $info
+  &.data-tip-no-animation
+    &:before, &:after
+      transition none

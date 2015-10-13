@@ -1,0 +1,19 @@
+{
+  "name": "data-tip",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^5.8.25",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-serve": "^1.2.0",
+    "gulp-stylus": "^2.1.0",
+    "nib": "^1.1.0"
+  }
+}
