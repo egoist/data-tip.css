@@ -9,7 +9,7 @@ html
       body {
         margin: 0;
         font: 16px/1.7 Helvetica;
-        padding-bottom: 100px;
+        padding: 100px 0;
       }
       a {
         color: #4078c0;
@@ -18,7 +18,7 @@ html
       .main {
         max-width: 500px;
         margin: 0 auto;
-        margin-top: 100px;
+        padding: 0 10px;
       }
       .sec {
         margin-bottom: 40px;
@@ -75,6 +75,11 @@ html
         background-color: #458746;
         border-color: #458746;
         color: #fff;
+      }
+      @media screen and (max-width: 768px) {
+        body {
+          padding: 20px 0;
+        }
       }
   body
     .main
