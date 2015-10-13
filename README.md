@@ -63,6 +63,16 @@ data-tip-rounded
 
 While I prefer to see that arrow in the center ;)
 
+## Development
+
+Update `data-tip.styl` to change styles
+
+|command|description|
+|---|---|
+|npm install|install dependencies for dev|
+|gulp build|build html and css files|
+|gulp|build and watch file changes|
+
 ## License
 
 MIT.
