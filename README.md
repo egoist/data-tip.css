@@ -43,6 +43,14 @@ Anti-animation:
 data-tip-no-animation
 ```
 
+## Why not hint.css?
+
+[hint.css](https://github.com/chinchang/hint.css) is another great tooltip library, but it looks exactly like this:
+
+![hint.css](http://r.loli.io/iUv2Yz.png)
+
+While I prefer to see that arrow in the center ;)
+
 ## License
 
 MIT.
