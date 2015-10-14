@@ -5,17 +5,10 @@
 [data-tip]:after {
   position: absolute;
   -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease, visibility 0.3s ease;
-  -moz-transition: opacity 0.3s ease, -moz-transform 0.3s ease, visibility 0.3s ease;
-  -o-transition: opacity 0.3s ease, -o-transform 0.3s ease, visibility 0.3s ease;
-  -ms-transition: opacity 0.3s ease, -ms-transform 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease, visibility 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
   visibility: hidden;
   font-size: 12px;
@@ -36,8 +29,6 @@
 [data-tip]:hover:before,
 [data-tip]:hover:after {
   opacity: 1;
-  -ms-filter: none;
-  filter: none;
   visibility: visible;
   z-index: 9999;
 }
@@ -53,10 +44,8 @@
 [data-tip].data-tip-bottom:hover:before,
 [data-tip].data-tip-bottom:hover:after {
   -webkit-transform: translateX(-50%) translateY(8px);
-  -moz-transform: translateX(-50%) translateY(8px);
-  -o-transform: translateX(-50%) translateY(8px);
-  -ms-transform: translateX(-50%) translateY(8px);
-  transform: translateX(-50%) translateY(8px);
+      -ms-transform: translateX(-50%) translateY(8px);
+          transform: translateX(-50%) translateY(8px);
 }
 [data-tip].data-tip-top:before,
 [data-tip].data-tip-top:after {
@@ -70,20 +59,16 @@
 [data-tip].data-tip-top:hover:before,
 [data-tip].data-tip-top:hover:after {
   -webkit-transform: translateX(-50%) translateY(-8px);
-  -moz-transform: translateX(-50%) translateY(-8px);
-  -o-transform: translateX(-50%) translateY(-8px);
-  -ms-transform: translateX(-50%) translateY(-8px);
-  transform: translateX(-50%) translateY(-8px);
+      -ms-transform: translateX(-50%) translateY(-8px);
+          transform: translateX(-50%) translateY(-8px);
 }
 [data-tip].data-tip-left:before,
 [data-tip].data-tip-left:after {
   top: 50%;
   right: 100%;
   -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 [data-tip].data-tip-left:before {
   margin-right: -12px;
@@ -92,20 +77,16 @@
 [data-tip].data-tip-left:hover:before,
 [data-tip].data-tip-left:hover:after {
   -webkit-transform: translateY(-50%) translateX(-8px);
-  -moz-transform: translateY(-50%) translateX(-8px);
-  -o-transform: translateY(-50%) translateX(-8px);
-  -ms-transform: translateY(-50%) translateX(-8px);
-  transform: translateY(-50%) translateX(-8px);
+      -ms-transform: translateY(-50%) translateX(-8px);
+          transform: translateY(-50%) translateX(-8px);
 }
 [data-tip].data-tip-right:before,
 [data-tip].data-tip-right:after {
   top: 50%;
   left: 100%;
   -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 [data-tip].data-tip-right:before {
   margin-left: -12px;
@@ -114,10 +95,8 @@
 [data-tip].data-tip-right:hover:before,
 [data-tip].data-tip-right:hover:after {
   -webkit-transform: translateY(-50%) translateX(8px);
-  -moz-transform: translateY(-50%) translateX(8px);
-  -o-transform: translateY(-50%) translateX(8px);
-  -ms-transform: translateY(-50%) translateX(8px);
-  transform: translateY(-50%) translateX(8px);
+      -ms-transform: translateY(-50%) translateX(8px);
+          transform: translateY(-50%) translateX(8px);
 }
 [data-tip].data-tip-success:after {
   background-color: #458746;
@@ -181,13 +160,8 @@
 }
 [data-tip].data-tip-no-animation:before,
 [data-tip].data-tip-no-animation:after {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  -ms-transition: none;
   transition: none;
 }
 [data-tip].data-tip-rounded:after {
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }

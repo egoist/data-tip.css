@@ -1,6 +1,6 @@
 {
   "name": "data-tip",
-  "version": "0.0.31",
+  "version": "0.0.4",
   "description": "",
   "main": "dist/data-tip.css",
   "scripts": {
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer-stylus": "^0.8.0",
     "babel-core": "^5.8.25",
     "gulp": "^3.9.0",
     "gulp-cssmin": "^0.1.7",

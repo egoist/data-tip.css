@@ -73,6 +73,10 @@ Update `data-tip.styl` to change styles
 |npm run build|build html and css files|
 |npm run dev|build and watch file changes|
 
+## Browser Support
+
+Currently it works on IE 8+ and most modern browsers. It uses `autoprefixer` so just modify `gulpfile.babel.js` to suit your need.
+
 ## License
 
 MIT.

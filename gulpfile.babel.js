@@ -2,7 +2,7 @@ import gulp from 'gulp'
 import stylus from 'gulp-stylus'
 import jade from 'gulp-jade'
 import serve from 'gulp-serve'
-import nib from 'nib'
+import autoprefixer from 'autoprefixer-stylus'
 import min from 'gulp-cssmin'
 import rename from 'gulp-rename'
 
@@ -16,8 +16,16 @@ gulp.task('serve', serve({
 gulp.task('css', () => {
   gulp.src('./data-tip.styl')
     .pipe(stylus({
-      use: [nib()],
-      import: ['nib']
+      use: [autoprefixer({
+        browsers: [
+          'ie > 7',
+          'Firefox > 20',
+          'last 2 Chrome versions',
+          'last 2 Safari versions',
+          'last 2 Opera versions',
+          '> 15% in CN'
+        ]
+      })]
     }))
     .pipe(gulp.dest('./dist'))
     .pipe(min())
