@@ -87,7 +87,38 @@ html
           padding: 20px 0;
         }
       }
+      .github-ribbon-container {
+        width: 10em;
+        height: 10em;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      a.github-ribbon, a.github-ribbon:visited {
+        color: #ecf0f1!important;
+      }
+      .github-ribbon {
+        z-index: 10;
+        display: block;
+        text-decoration: none;
+        background-color: #34495e;
+        position: relative;
+        left: -6em;
+        height: 2em;
+        width: 16em;
+        text-align: center;
+        line-height: 2.2em;
+        font-family: Helvetica,Arial,sans-serif;
+        -webkit-transform: translate(50%,-50%) rotate(45deg) translateY(6em);
+        -moz-transform: translate(50%,-50%) rotate(45deg) translateY(6em);
+        -o-transform: translate(50%,-50%) rotate(45deg) translateY(6em);
+        -ms-transform: translate(50%,-50%) rotate(45deg) translateY(6em);
+        transform: translate(50%,-50%) rotate(45deg) translateY(6em);
+      }
   body
+    .github-ribbon-container
+      a.github-ribbon(href="https://github.com/egoist/data-tip.css") Star Me on GitHub!
     .main
       img.doge(src="https://camo.githubusercontent.com/da16c89e389d76b8fdddeb48a274b08c8f8bc60a/687474703a2f2f72352e6c6f6c692e696f2f616959564a622e706e67")
       h1 >_ data-tip.css
