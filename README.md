@@ -55,6 +55,24 @@ Rounded border:
 data-tip-rounded
 ```
 
+Fast mode:
+
+```html
+data-tip-fast
+```
+
+Box with shadow:
+
+```html
+data-tip-shadow
+```
+
+Always visible:
+
+```html
+data-tip-visible
+```
+
 ## Why not hint.css?
 
 [hint.css](https://github.com/chinchang/hint.css) is another great tooltip library, but it looks exactly like this:

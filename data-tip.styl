@@ -19,13 +19,16 @@ colorGen(type)
     &:before
       border-bottom-color type
 
+animation(a, b, c)
+  transition opacity a ease, transform b ease, visibility c ease
+
 [data-tip]
   position relative
   &:before, &:after
     position absolute
     transform translateX(-50%)
     opacity 0
-    transition opacity .3s ease, transform .3s ease, visibility .3s ease
+    animation .3s, .3s, .3s
     visibility hidden
     font-size 12px
     line-height @font-size
@@ -39,7 +42,7 @@ colorGen(type)
     display block
     color white
     white-space nowrap
-  &:hover
+  &:hover, &.data-tip-visible
     &:before, &:after
       opacity 1
       visibility visible
@@ -52,7 +55,7 @@ colorGen(type)
     &:before
       margin-top -12px
       border-bottom-color #333
-    &:hover
+    &:hover, &.data-tip-visible
       &:before, &:after
         transform translateX(-50%) translateY(8px)
   // top
@@ -63,7 +66,7 @@ colorGen(type)
     &:before
       margin-bottom -12px
       border-top-color #333
-    &:hover
+    &:hover, &.data-tip-visible
       &:before, &:after
         transform translateX(-50%) translateY(-8px)
   // left
@@ -75,7 +78,7 @@ colorGen(type)
     &:before
       margin-right -12px
       border-left-color #333
-    &:hover
+    &:hover, &.data-tip-visible
       &:before, &:after
         transform translateY(-50%) translateX(-8px)
   // right
@@ -87,7 +90,7 @@ colorGen(type)
     &:before
       margin-left -12px
       border-right-color #333
-    &:hover
+    &:hover, &.data-tip-visible
       &:before, &:after
         transform translateY(-50%) translateX(8px)
   // custom color
@@ -107,3 +110,9 @@ colorGen(type)
   &.data-tip-rounded
     &:after
       border-radius 2px
+  &.data-tip-fast
+    &:before, &:after
+      animation .1s, .1s, .1s
+  &.data-tip-shadow
+    &:after
+      box-shadow 4px 4px 8px rgba(0,0,0,.3)
