@@ -1,5 +1,6 @@
 [data-tip] {
   position: relative;
+  overflow: visible;
 }
 [data-tip]:before,
 [data-tip]:after {
