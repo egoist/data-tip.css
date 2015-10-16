@@ -8,6 +8,7 @@
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   opacity: 0;
+  filter: alpha(opacity=0);
   transition: opacity 0.3s ease, -webkit-transform 0.3s ease, visibility 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
   visibility: hidden;
@@ -31,6 +32,7 @@
 [data-tip]:hover:after,
 [data-tip].data-tip-visible:after {
   opacity: 1;
+  filter: alpha(opacity=100);
   visibility: visible;
   z-index: 9999;
 }

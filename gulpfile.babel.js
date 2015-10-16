@@ -2,9 +2,13 @@ import gulp from 'gulp'
 import stylus from 'gulp-stylus'
 import jade from 'gulp-jade'
 import serve from 'gulp-serve'
+import postcss from 'gulp-postcss'
 import autoprefixer from 'autoprefixer-stylus'
 import min from 'gulp-cssmin'
 import rename from 'gulp-rename'
+import cssgrace from 'cssgrace'
+import cssnext from 'cssnext'
+import nano from 'gulp-cssnano'
 
 const time = Date.now()
 
@@ -13,22 +17,23 @@ gulp.task('serve', serve({
   port: 3000
 }))
 
+const pres = [cssnext({
+  browsers: [
+    'ie > 7',
+    'Firefox > 20',
+    'Chrome > 37',
+    'last 2 Safari versions',
+    'last 2 Opera versions',
+    '> 15% in CN'
+  ]
+}), cssgrace]
+
 gulp.task('css', () => {
   gulp.src('./data-tip.styl')
-    .pipe(stylus({
-      use: [autoprefixer({
-        browsers: [
-          'ie > 7',
-          'Firefox > 20',
-          'last 2 Chrome versions',
-          'last 2 Safari versions',
-          'last 2 Opera versions',
-          '> 15% in CN'
-        ]
-      })]
-    }))
+    .pipe(stylus())
+    .pipe(postcss(pres))
     .pipe(gulp.dest('./dist'))
-    .pipe(min())
+    .pipe(nano())
     .pipe(rename({
       suffix: '.min'
     }))

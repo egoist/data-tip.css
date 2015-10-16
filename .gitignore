@@ -1,3 +1,4 @@
+*.rdb
 # Logs
 logs
 *.log
