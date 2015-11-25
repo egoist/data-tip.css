@@ -6,6 +6,8 @@ Wow, such tooltip, with pure css!
 
 ## Install
 
+CDN: https://npmcdn.com/data-tip@latest
+
 ```bash
 bower install data-tip
 npm install data-tip
