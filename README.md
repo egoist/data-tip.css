@@ -1,3 +1,5 @@
+New: [Clew](https://github.com/egoist/clew) is an even more light-weight (1.2kb) tooltip in pure css.
+
 <img src="http://r5.loli.io/aiYVJb.png" align="right" width="100">
 
 # data-tip.css
