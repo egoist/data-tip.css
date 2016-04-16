@@ -1,4 +1,4 @@
-New: [Clew](https://github.com/egoist/clew) is an even more light-weight (1.2kb) tooltip in pure css.
+**Notice:** [hint.css](http://kushagragour.in/lab/hint/) is becoming much better since I complain about it months ago, so try out its new features instead of this one!
 
 <img src="http://r5.loli.io/aiYVJb.png" align="right" width="100">
 
@@ -76,14 +76,6 @@ Always visible:
 ```html
 data-tip-visible
 ```
-
-## Why not hint.css?
-
-[hint.css](https://github.com/chinchang/hint.css) is another great tooltip library, but it looks exactly like this:
-
-![hint.css](http://r.loli.io/iUv2Yz.png)
-
-While I prefer to see that arrow in the center ;)
 
 ## Development
 
