@@ -1,4 +1,4 @@
-**Notice:** [hint.css](http://kushagragour.in/lab/hint/) is becoming much better since I complain about it months ago, so try out its new features instead of this one!
+**Notice:** [hint.css](http://kushagragour.in/lab/hint/) has been much better since I complained about it months ago, so try out its new features instead of this one!
 
 <img src="http://r5.loli.io/aiYVJb.png" align="right" width="100">
 
