@@ -8,6 +8,10 @@
     "build": "gulp build",
     "dev": "gulp"
   },
+  "repository": {	
+    "type": "git",
+    "url": "https://github.com/egoist/data-tip.css.git"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
